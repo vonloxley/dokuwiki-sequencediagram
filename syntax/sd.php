@@ -73,7 +73,7 @@ class syntax_plugin_sequencediagram_sd extends DokuWiki_Syntax_Plugin {
             try {
                 preg_match('/<sequencediagram>(.*?)<\/sequencediagram>/s', $data[0], $erg);
                 $src = $renderer->_xmlEntities($erg[1]);
-                $text="<div class=\"diagram\">$src</div><script>jQuery(\".diagram\").sequenceDiagram({theme: 'simple'});</script>";
+                $text="<div class=\"diagram\">$src</div>";
                 $renderer->doc .= $text;
             } catch (Exception $e) {
               $renderer->doc .= "<pre>".htmlentities($text)."\n".$e."</pre>";
