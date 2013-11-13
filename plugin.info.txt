@@ -1,7 +1,7 @@
 base   sequencediagram
 author K.-M. Hansche
 email  mf-developing@hansche.de
-date   2013-07-11
+date   2013-11-13
 name   Sequencediagram plugin
 desc   Generate sequence-diagrams
 url    https://github.com/vonloxley/dokuwiki-sequencediagram
