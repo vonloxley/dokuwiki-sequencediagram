@@ -8,7 +8,7 @@
 // must be run within Dokuwiki
 if (!defined('DOKU_INC')) die();
 
-class syntax_plugin_sequencediagram_sd extends DokuWiki_Syntax_Plugin {
+class syntax_plugin_sequencediagram extends DokuWiki_Syntax_Plugin {
     /**
      * @return string Syntax mode type
      */
@@ -34,7 +34,7 @@ class syntax_plugin_sequencediagram_sd extends DokuWiki_Syntax_Plugin {
      * @param string $mode Parser mode
      */
     public function connectTo($mode) {
-        $this->Lexer->addSpecialPattern('<sequencediagram>.*?</sequencediagram>',$mode,'plugin_sequencediagram_sd');
+        $this->Lexer->addSpecialPattern('<sequencediagram>.*?</sequencediagram>',$mode,'plugin_sequencediagram');
     }
 
 //    public function postConnect() {
