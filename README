@@ -1,6 +1,7 @@
 Sequencediagram Plugin for DokuWiki
+-----------------------------------
 
-Generate sequence-diagrams using js-sequence-diagrams by Andrew Brampton
+Generate sequence-diagrams using js-sequence-diagrams by Andrew Brampton.
 
 There is one configuration: ''sequencediagram_layout'' which can be 
 ''simple'' (default) or ''hand'' to make the diagram look hand-drawn.
