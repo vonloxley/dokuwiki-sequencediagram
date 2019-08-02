@@ -1,9 +1,7 @@
-/* DOKUWIKI:include_once scripts/underscore.js */
-/* DOKUWIKI:include_once scripts/raphael.js */
-/* DOKUWIKI:include_once scripts/grammar.js */
-/* DOKUWIKI:include_once scripts/diagram.js */
-/* DOKUWIKI:include_once scripts/jquery-plugin.js */
-/* DOKUWIKI:include_once scripts/sequence-diagram.js */
+/* DOKUWIKI:include_once bower_components/bower-webfontloader/webfont.js */
+/* DOKUWIKI:include_once bower_components/snap.svg/dist/snap.svg-min.js */
+/* DOKUWIKI:include_once bower_components/underscore/underscore-min.js */
+/* DOKUWIKI:include_once bower_components/js-sequence-diagrams/dist/sequence-diagram.js */
 
 jQuery(
 	function(){
