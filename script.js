@@ -5,6 +5,6 @@
 
 jQuery(
 	function(){
-		jQuery(".diagram").sequenceDiagram({theme: 'simple'})
+		jQuery(".diagram").sequenceDiagram({theme: sdTheme})
 	}
 );
