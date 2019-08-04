@@ -224,3 +224,12 @@ bower_components/underscore/.bower.json
 bower_components/underscore/LICENSE
 bower_components/underscore/README.md
 bower_components/underscore/bower.json
+scripts/diagram.js
+scripts/grammar.js
+scripts/jquery-plugin.js
+scripts/sequence-diagram.js
+scripts/underscore.js
+scripts/raphael-min.js
+scripts/sequence-diagram-min.js
+scripts/underscore-min.js
+syntax/sd.php
