@@ -71,12 +71,18 @@ class syntax_plugin_sequencediagram extends DokuWiki_Syntax_Plugin {
     public function render($mode, Doku_Renderer $renderer, $data) {
         if($mode == 'xhtml'){
             try {
+                $text='';
+                $layout = $this->getConf('sequencediagram_layout');
+                $layouts = array('simple', 'hand');
+                if (!in_array($layout, $layouts)){
+                    $layout = 'simple';
+                }
                 preg_match('/<sequencediagram>(.*?)<\/sequencediagram>/s', $data[0], $erg);
                 $src = $renderer->_xmlEntities($erg[1]);
-                $text="<div class=\"diagram\" style=\"overflow:auto;\">$src</div><script>var sdTheme='".$this->getConf('sequencediagram_layout')."'</script>";
+                $text="<div class=\"diagram\" style=\"overflow:auto;\">$src</div><script>var sdTheme='".$layout."'</script>";
                 $renderer->doc .= $text;
             } catch (Exception $e) {
-              $renderer->doc .= "<pre>".htmlentities($text)."\n".$e."</pre>";
+              $renderer->doc .= "<pre>".htmlentities($text)."\n".htmlentities($e)."</pre>";
             }
             return true;
         }
